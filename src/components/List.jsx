@@ -10,11 +10,10 @@ var movieData = [
     year: 2009,
     amount: "$2,787,965,087",
     img: {
-      src:
-        "https://th.bing.com/th/id/R.b304c7b0e1751794c05ca44d94cea47a?rik=LZD4JLSQturzbA&riu=http%3a%2f%2fglobalcomment.com%2fwp-content%2fuploads%2f2009%2f12%2favatarstill1.jpg&ehk=vGiHlZi0SvoA3HQBCKONr%2f6BmG5tPKjs14Xb9o6%2f%2bPU%3d&risl=&pid=ImgRaw&r=0",
-      alt: "avatar"
+      src: "https://th.bing.com/th/id/R.b304c7b0e1751794c05ca44d94cea47a?rik=LZD4JLSQturzbA&riu=http%3a%2f%2fglobalcomment.com%2fwp-content%2fuploads%2f2009%2f12%2favatarstill1.jpg&ehk=vGiHlZi0SvoA3HQBCKONr%2f6BmG5tPKjs14Xb9o6%2f%2bPU%3d&risl=&pid=ImgRaw&r=0",
+      alt: "avatar",
     },
-    ranking: 1
+    ranking: 1,
   },
   {
     id: 2,
@@ -24,9 +23,9 @@ var movieData = [
     amount: "$2,187,463,944",
     img: {
       src: "https://image.tmdb.org/t/p/w1280/74d4bOZ7kwUHEjb5NZ84Ft6lCpR.jpg",
-      alt: "titanic"
+      alt: "titanic",
     },
-    ranking: 2
+    ranking: 2,
   },
   {
     id: 3,
@@ -35,11 +34,10 @@ var movieData = [
     year: 2015,
     amount: "$2,068,223,624",
     img: {
-      src:
-        "https://th.bing.com/th/id/OIP.TDmB9kbKPZZuxMKeb_yj4AHaK9?pid=ImgDet&rs=1",
-      alt: "star_wars_the_force_awakens"
+      src: "https://th.bing.com/th/id/OIP.TDmB9kbKPZZuxMKeb_yj4AHaK9?pid=ImgDet&rs=1",
+      alt: "star_wars_the_force_awakens",
     },
-    ranking: 3
+    ranking: 3,
   },
   {
     id: 4,
@@ -48,11 +46,10 @@ var movieData = [
     year: 2018,
     amount: "$2,048,359,754",
     img: {
-      src:
-        "https://th.bing.com/th/id/R.6643a6baa39636a28362430a7b661e02?rik=zlZTpa7FmZFvbg&riu=http%3a%2f%2fwww.blackfilm.com%2fread%2fwp-content%2fuploads%2f2018%2f03%2fAvengers-Infinity-War-new-poster.jpg&ehk=jsSvmXCEEpifurzDZH1G%2bp2T6%2f1ubqZd%2bsC4lLrcbmo%3d&risl=&pid=ImgRaw&r=0",
-      alt: "avengers_infinity_war"
+      src: "https://th.bing.com/th/id/R.6643a6baa39636a28362430a7b661e02?rik=zlZTpa7FmZFvbg&riu=http%3a%2f%2fwww.blackfilm.com%2fread%2fwp-content%2fuploads%2f2018%2f03%2fAvengers-Infinity-War-new-poster.jpg&ehk=jsSvmXCEEpifurzDZH1G%2bp2T6%2f1ubqZd%2bsC4lLrcbmo%3d&risl=&pid=ImgRaw&r=0",
+      alt: "avengers_infinity_war",
     },
-    ranking: 4
+    ranking: 4,
   },
   {
     id: 5,
@@ -61,12 +58,11 @@ var movieData = [
     year: 2015,
     amount: "$1,671,713,208",
     img: {
-      src:
-        "https://th.bing.com/th/id/OIP.5f9SCiK7CS-Vwn4Ujd1ccgHaLD?pid=ImgDet&rs=1",
-      alt: "jurassic_world"
+      src: "https://th.bing.com/th/id/OIP.5f9SCiK7CS-Vwn4Ujd1ccgHaLD?pid=ImgDet&rs=1",
+      alt: "jurassic_world",
     },
-    ranking: 5
-  }
+    ranking: 5,
+  },
 ];
 
 function List() {
@@ -89,7 +85,7 @@ function List() {
     fetchdata();
   });
   return (
-    <div>
+    <div className="list">
       {movieData.map((obj) => (
         <Show obj={obj} />
       ))}

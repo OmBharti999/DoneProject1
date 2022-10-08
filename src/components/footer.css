@@ -1,0 +1,8 @@
+.foot {
+  margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+  padding: 5vh;
+  color: white;
+  background: black;
+}

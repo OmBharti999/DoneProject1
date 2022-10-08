@@ -12,7 +12,7 @@ export default function Show(p) {
 
 function KitchenSinkExample(p) {
   return (
-    <Card style={{ width: "18rem" }}>
+    <Card style={{ width: "16rem" }}>
       <Card.Img variant="top" src={p.object.img.src} />
       <Card.Body>
         <Card.Title>{`#${p.object.id} - ${p.object.title} (${p.object.year})`}</Card.Title>

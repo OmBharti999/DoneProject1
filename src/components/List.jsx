@@ -10,8 +10,10 @@ var movieData = [
     year: 2009,
     amount: "$2,787,965,087",
     img: {
-      src: "https://th.bing.com/th/id/R.b304c7b0e1751794c05ca44d94cea47a?rik=LZD4JLSQturzbA&riu=http%3a%2f%2fglobalcomment.com%2fwp-content%2fuploads%2f2009%2f12%2favatarstill1.jpg&ehk=vGiHlZi0SvoA3HQBCKONr%2f6BmG5tPKjs14Xb9o6%2f%2bPU%3d&risl=&pid=ImgRaw&r=0",
+
+      src: "https://th.bing.com/th/id/R.bd74374165c28f7454a4037ad8e824dd?rik=xxvM%2bWb1nyvtJg&riu=http%3a%2f%2fcafmp.com%2fwp-content%2fuploads%2f2012%2f12%2fAvatar-French-Poster.jpg&ehk=jCzn4VSVtQ0Gf8Nllupd2SG08v%2fYnOm2nAjhfzT1cSg%3d&risl=&pid=ImgRaw&r=0",
       alt: "avatar",
+
     },
     ranking: 1,
   },

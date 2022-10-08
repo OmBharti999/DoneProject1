@@ -1,4 +1,5 @@
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import List from "./components/List";
 
 import "./styles.css";
@@ -9,6 +10,7 @@ export default function App() {
     <div className="App">
       <Header />
       <List />
+      <Footer />
     </div>
   );
 }

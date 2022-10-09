@@ -69,26 +69,9 @@ var movieData = [
 ];
 
 function List() {
-  const [movie, setMovie] = useState(
-    "https://images.unsplash.com/photo-1661956602139-ec64991b8b16?ixid=MnwzNzAzMDV8MXwxfGFsbHwxfHx8fHx8Mnx8MTY2NTI4MzEzNw\u0026ixlib=rb-1.2.1"
-  );
-  async function fetchdata() {
-    let response = await fetch(
-      "https://api.unsplash.com/photos/?client_id=JqY3aRSu5ENaTKit8O8xr9UpVpMmTB2blJBIvlX5K6g"
-    );
-    const data = await response.json();
-    const imgArr = data.map((i) => i.urls.raw);
-    console.log("imgarr", imgArr);
-    setMovie(imgArr);
-  }
-
-  useEffect(() => {
-    fetchdata();
-  }, []);
   return (
     <div>
       <Carousels />
-
       <div className="list">
         {movieData.map((obj) => (
           <Show obj={obj} />

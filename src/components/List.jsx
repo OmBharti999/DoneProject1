@@ -87,7 +87,7 @@ function List() {
   }, []);
   return (
     <div>
-      <Carousels movie={movie} />
+      <Carousels />
 
       <div className="list">
         {movieData.map((obj) => (

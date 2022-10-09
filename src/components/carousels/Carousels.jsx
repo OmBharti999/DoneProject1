@@ -43,7 +43,7 @@ function UncontrolledExample() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://th.bing.com/th/id/OIP.eNJcg1PGPMLqWSQ813qE3QHaEK?pid=ImgDet&rs=1"
+          src="https://wallpapercave.com/wp/3i6dLrF.jpg"
           alt="Third slide"
         />
 
@@ -62,7 +62,7 @@ function UncontrolledExample() {
         />
 
         <Carousel.Caption>
-          <h3>Fourth slide label</h3>
+          <h3>Fifth slide label</h3>
           <p>
             Praesent commodo cursus magna, vel scelerisque nisl consectetur.
           </p>

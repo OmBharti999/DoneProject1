@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Carousels from "./carousels/Carousels";
 
 import Show from "./card/Show";
 
@@ -68,25 +69,31 @@ var movieData = [
 ];
 
 function List() {
-  const [movie, setMovie] = useState(movieData);
+  const [movie, setMovie] = useState(
+    "https://images.unsplash.com/photo-1661956602139-ec64991b8b16?ixid=MnwzNzAzMDV8MXwxfGFsbHwxfHx8fHx8Mnx8MTY2NTI4MzEzNw\u0026ixlib=rb-1.2.1"
+  );
+  async function fetchdata() {
+    let response = await fetch(
+      "https://api.unsplash.com/photos/?client_id=JqY3aRSu5ENaTKit8O8xr9UpVpMmTB2blJBIvlX5K6g"
+    );
+    const data = await response.json();
+    const imgArr = data.map((i) => i.urls.raw);
+    console.log("imgarr", imgArr);
+    setMovie(imgArr);
+  }
+
   useEffect(() => {
-    
-    async function fetchdata() {
-    
-       let response = await fetch(
-         "https://www.omdbapi.com/?i=tt3896198&apikey=fa3dab28"
-       );
-     
-      const data = await response.json();
-    }
-  
     fetchdata();
-  });
+  }, []);
   return (
-    <div className="list">
-      {movieData.map((obj) => (
-        <Show obj={obj} />
-      ))}
+    <div>
+      <Carousels movie={movie} />
+
+      <div className="list">
+        {movieData.map((obj) => (
+          <Show obj={obj} />
+        ))}
+      </div>
     </div>
   );
 }

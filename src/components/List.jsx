@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Carousels from "./carousels/Carousels";
 
 import Show from "./card/Show";
 
@@ -68,25 +69,14 @@ var movieData = [
 ];
 
 function List() {
-  const [movie, setMovie] = useState(movieData);
-  useEffect(() => {
-    
-    async function fetchdata() {
-    
-       let response = await fetch(
-         "https://www.omdbapi.com/?i=tt3896198&apikey=fa3dab28"
-       );
-     
-      const data = await response.json();
-    }
-  
-    fetchdata();
-  });
   return (
-    <div className="list">
-      {movieData.map((obj) => (
-        <Show obj={obj} />
-      ))}
+    <div>
+      <Carousels />
+      <div className="list">
+        {movieData.map((obj) => (
+          <Show obj={obj} />
+        ))}
+      </div>
     </div>
   );
 }

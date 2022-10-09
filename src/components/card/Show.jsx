@@ -2,7 +2,7 @@ import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
 
 export default function Show(p) {
-  console.log("hi", p.obj);
+  // console.log("hi", p.obj);
   return (
     <div>
       <KitchenSinkExample object={p.obj} />

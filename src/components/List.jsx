@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 import Carousels from "./carousels/Carousels";
 
 import Show from "./card/Show";
@@ -70,7 +70,7 @@ var movieData = [
 
 function List() {
   return (
-    <div>
+    <div className="cont-list">
       <Carousels />
       <div className="list">
         {movieData.map((obj) => (

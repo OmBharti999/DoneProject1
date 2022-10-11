@@ -1,3 +1,7 @@
+.cont-list {
+  margin-top: 8vh;
+}
+
 .list {
   display: flex;
   flex-wrap: wrap;

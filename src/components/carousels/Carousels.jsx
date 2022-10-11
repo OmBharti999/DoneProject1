@@ -17,7 +17,7 @@ function UncontrolledExample() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://th.bing.com/th/id/R.6ccecdb69d13a33394a7eb1378e47ed2?rik=Q8a3xBrqYx0ydA&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fwp1921023.jpg&ehk=%2fIoR5N%2fNhmAauLFXi4%2b85iqtsK953hyisStqefhiWrc%3d&risl=&pid=ImgRaw&r=0"
+          src="https://wallpapercave.com/wp/wp2153345.jpg"
           alt="Second slide"
         />
 
@@ -57,7 +57,7 @@ function UncontrolledExample() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://th.bing.com/th/id/OIP.kyWWS2_VfW6FriTQnz04IgHaFP?pid=ImgDet&rs=1"
+          src="https://th.bing.com/th/id/R.11227f9548eef97e4de838045e32d738?rik=Cdtbxi0nmFYxmA&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f10%2fDoraemon-wallpaper-for-desktop.jpg&ehk=Wa3aQF%2b4c33lXV4j2W8O1%2bWkeF3hzkTeUJW%2faVBhMYw%3d&risl=&pid=ImgRaw&r=0"
           alt="Third slide"
         />
 
